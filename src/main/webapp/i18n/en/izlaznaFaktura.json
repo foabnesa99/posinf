@@ -1,0 +1,33 @@
+{
+  "myApp": {
+    "izlaznaFaktura": {
+      "home": {
+        "title": "Izlazna Fakturas",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Izlazna Faktura",
+        "createOrEditLabel": "Create or edit a Izlazna Faktura",
+        "notFound": "No Izlazna Fakturas found"
+      },
+      "created": "A new Izlazna Faktura is created with identifier {{ param }}",
+      "updated": "A Izlazna Faktura is updated with identifier {{ param }}",
+      "deleted": "A Izlazna Faktura is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Izlazna Faktura {{ id }}?"
+      },
+      "detail": {
+        "title": "Izlazna Faktura"
+      },
+      "id": "ID",
+      "brojFakture": "Broj Fakture",
+      "datumIzdavanja": "Datum Izdavanja",
+      "datumValute": "Datum Valute",
+      "ukupnaOsnovica": "Ukupna Osnovica",
+      "ukupanRabat": "Ukupan Rabat",
+      "ukupanIznos": "Ukupan Iznos",
+      "status": "Status",
+      "kupac": "Kupac",
+      "preduzece": "Preduzece",
+      "stavkaFakture": "Stavka Fakture"
+    }
+  }
+}

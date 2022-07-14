@@ -1,0 +1,29 @@
+{
+  "myApp": {
+    "kupac": {
+      "home": {
+        "title": "Kupacs",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Kupac",
+        "createOrEditLabel": "Create or edit a Kupac",
+        "notFound": "No Kupacs found"
+      },
+      "created": "A new Kupac is created with identifier {{ param }}",
+      "updated": "A Kupac is updated with identifier {{ param }}",
+      "deleted": "A Kupac is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Kupac {{ id }}?"
+      },
+      "detail": {
+        "title": "Kupac"
+      },
+      "id": "ID",
+      "pib": "Pib",
+      "mib": "Mib",
+      "naziv": "Naziv",
+      "adresa": "Adresa",
+      "telefon": "Telefon",
+      "izlaznaFaktura": "Izlazna Faktura"
+    }
+  }
+}

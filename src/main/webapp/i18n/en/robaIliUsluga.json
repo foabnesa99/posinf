@@ -1,0 +1,29 @@
+{
+  "myApp": {
+    "robaIliUsluga": {
+      "home": {
+        "title": "Roba Ili Uslugas",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Roba Ili Usluga",
+        "createOrEditLabel": "Create or edit a Roba Ili Usluga",
+        "notFound": "No Roba Ili Uslugas found"
+      },
+      "created": "A new Roba Ili Usluga is created with identifier {{ param }}",
+      "updated": "A Roba Ili Usluga is updated with identifier {{ param }}",
+      "deleted": "A Roba Ili Usluga is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Roba Ili Usluga {{ id }}?"
+      },
+      "detail": {
+        "title": "Roba Ili Usluga"
+      },
+      "id": "ID",
+      "naziv": "Naziv",
+      "opis": "Opis",
+      "cena": "Cena",
+      "jedinicaMere": "Jedinica Mere",
+      "poreskaKategorija": "Poreska Kategorija",
+      "stavkaFakture": "Stavka Fakture"
+    }
+  }
+}

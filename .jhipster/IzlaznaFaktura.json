@@ -1,0 +1,64 @@
+{
+  "applications": ["myApp"],
+  "changelogDate": "20220713141628",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "izlazna_faktura",
+  "fields": [
+    {
+      "fieldName": "brojFakture",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "datumIzdavanja",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "datumValute",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "ukupnaOsnovica",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "ukupanRabat",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "ukupanIznos",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "StatusFakture",
+      "fieldValues": "FORMIRANJE,POSLATA,PONISTENA"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "IzlaznaFaktura",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "kupac",
+      "otherEntityRelationshipName": "izlaznaFaktura",
+      "relationshipName": "kupac",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "preduzece",
+      "otherEntityRelationshipName": "izlaznaFaktura",
+      "relationshipName": "preduzece",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "stavkaFakture",
+      "otherEntityRelationshipName": "izlaznaFaktura",
+      "relationshipName": "stavkaFakture",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "no"
+}

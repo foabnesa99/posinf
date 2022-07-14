@@ -1,0 +1,95 @@
+
+application {
+  config {
+    baseName myApp,
+    applicationType monolith,
+    packageName com.myapp,
+    authenticationType jwt,
+    prodDatabaseType mysql,
+    clientFramework react
+  }
+  entities *
+}
+
+entity Kupac {
+pib String,
+mib String,
+naziv String,
+adresa String,
+telefon String,
+}
+
+entity IzlaznaFaktura {
+brojFakture String,
+datumIzdavanja LocalDate,
+datumValute LocalDate,
+ukupnaOsnovica Double,
+ukupanRabat Integer,
+ukupanIznos Double,
+status StatusFakture,
+}
+
+enum StatusFakture{
+FORMIRANJE,
+POSLATA,
+PONISTENA
+}
+
+entity RobaIliUsluga{
+naziv String,
+opis TextBlob,
+}
+
+entity Cena{
+datumVazenja LocalDate,
+iznosCene Double
+}
+
+entity PoreskaKategorija{
+naziv String,
+}
+
+entity PoreskaStopa{
+procenatPdv Double,
+datumVazenja LocalDate
+}
+
+entity JedinicaMere{
+naziv String,
+skraceniNaziv String
+ }
+ 
+entity PoslovnaGodina{
+godina Integer,
+zakljucena Boolean
+} 
+
+entity StavkaFakture {
+kolicina Double,
+jedinicnaCena Double,
+rabat Integer,
+procenatPDV Integer,
+iznosPDV Double,
+ukupnaCena Double,
+}
+
+entity Preduzece{
+pib String,
+naziv String,
+adresa String
+}
+
+relationship OneToMany {
+  Preduzece to IzlaznaFaktura,
+  Preduzece to PoslovnaGodina,
+  PoreskaKategorija to PoreskaStopa
+  RobaIliUsluga to Cena,
+}
+
+relationship ManyToOne{
+StavkaFakture to IzlaznaFaktura,
+RobaIliUsluga to JedinicaMere,
+StavkaFakture to RobaIliUsluga,
+RobaIliUsluga to PoreskaKategorija,
+IzlaznaFaktura to Kupac,
+}

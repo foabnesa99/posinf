@@ -1,0 +1,41 @@
+{
+  "applications": ["myApp"],
+  "changelogDate": "20220713141636",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "preduzece",
+  "fields": [
+    {
+      "fieldName": "pib",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "naziv",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "adresa",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Preduzece",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "izlaznaFaktura",
+      "otherEntityRelationshipName": "preduzece",
+      "relationshipName": "izlaznaFaktura",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "poslovnaGodina",
+      "otherEntityRelationshipName": "preduzece",
+      "relationshipName": "poslovnaGodina",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "no"
+}

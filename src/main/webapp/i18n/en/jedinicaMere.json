@@ -1,0 +1,26 @@
+{
+  "myApp": {
+    "jedinicaMere": {
+      "home": {
+        "title": "Jedinica Meres",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Jedinica Mere",
+        "createOrEditLabel": "Create or edit a Jedinica Mere",
+        "notFound": "No Jedinica Meres found"
+      },
+      "created": "A new Jedinica Mere is created with identifier {{ param }}",
+      "updated": "A Jedinica Mere is updated with identifier {{ param }}",
+      "deleted": "A Jedinica Mere is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Jedinica Mere {{ id }}?"
+      },
+      "detail": {
+        "title": "Jedinica Mere"
+      },
+      "id": "ID",
+      "naziv": "Naziv",
+      "skraceniNaziv": "Skraceni Naziv",
+      "robaIliUsluga": "Roba Ili Usluga"
+    }
+  }
+}

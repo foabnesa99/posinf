@@ -1,0 +1,50 @@
+{
+  "applications": ["myApp"],
+  "changelogDate": "20220713141629",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "roba_ili_usluga",
+  "fields": [
+    {
+      "fieldName": "naziv",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "opis",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "RobaIliUsluga",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "cena",
+      "otherEntityRelationshipName": "robaIliUsluga",
+      "relationshipName": "cena",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "jedinicaMere",
+      "otherEntityRelationshipName": "robaIliUsluga",
+      "relationshipName": "jedinicaMere",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "poreskaKategorija",
+      "otherEntityRelationshipName": "robaIliUsluga",
+      "relationshipName": "poreskaKategorija",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "stavkaFakture",
+      "otherEntityRelationshipName": "robaIliUsluga",
+      "relationshipName": "stavkaFakture",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "no"
+}

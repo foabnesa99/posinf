@@ -1,0 +1,31 @@
+{
+  "myApp": {
+    "stavkaFakture": {
+      "home": {
+        "title": "Stavka Faktures",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Stavka Fakture",
+        "createOrEditLabel": "Create or edit a Stavka Fakture",
+        "notFound": "No Stavka Faktures found"
+      },
+      "created": "A new Stavka Fakture is created with identifier {{ param }}",
+      "updated": "A Stavka Fakture is updated with identifier {{ param }}",
+      "deleted": "A Stavka Fakture is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Stavka Fakture {{ id }}?"
+      },
+      "detail": {
+        "title": "Stavka Fakture"
+      },
+      "id": "ID",
+      "kolicina": "Kolicina",
+      "jedinicnaCena": "Jedinicna Cena",
+      "rabat": "Rabat",
+      "procenatPDV": "Procenat PDV",
+      "iznosPDV": "Iznos PDV",
+      "ukupnaCena": "Ukupna Cena",
+      "izlaznaFaktura": "Izlazna Faktura",
+      "robaIliUsluga": "Roba Ili Usluga"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "myApp": {
+    "poslovnaGodina": {
+      "home": {
+        "title": "Poslovna Godinas",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Poslovna Godina",
+        "createOrEditLabel": "Create or edit a Poslovna Godina",
+        "notFound": "No Poslovna Godinas found"
+      },
+      "created": "A new Poslovna Godina is created with identifier {{ param }}",
+      "updated": "A Poslovna Godina is updated with identifier {{ param }}",
+      "deleted": "A Poslovna Godina is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Poslovna Godina {{ id }}?"
+      },
+      "detail": {
+        "title": "Poslovna Godina"
+      },
+      "id": "ID",
+      "godina": "Godina",
+      "zakljucena": "Zakljucena",
+      "preduzece": "Preduzece"
+    }
+  }
+}

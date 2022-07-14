@@ -1,0 +1,53 @@
+{
+  "applications": ["myApp"],
+  "changelogDate": "20220713141635",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "stavka_fakture",
+  "fields": [
+    {
+      "fieldName": "kolicina",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "jedinicnaCena",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "rabat",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "procenatPDV",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "iznosPDV",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "ukupnaCena",
+      "fieldType": "Double"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "StavkaFakture",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "izlaznaFaktura",
+      "otherEntityRelationshipName": "stavkaFakture",
+      "relationshipName": "izlaznaFaktura",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "robaIliUsluga",
+      "otherEntityRelationshipName": "stavkaFakture",
+      "relationshipName": "robaIliUsluga",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

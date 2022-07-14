@@ -1,0 +1,26 @@
+{
+  "myApp": {
+    "cena": {
+      "home": {
+        "title": "Cenas",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Cena",
+        "createOrEditLabel": "Create or edit a Cena",
+        "notFound": "No Cenas found"
+      },
+      "created": "A new Cena is created with identifier {{ param }}",
+      "updated": "A Cena is updated with identifier {{ param }}",
+      "deleted": "A Cena is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Cena {{ id }}?"
+      },
+      "detail": {
+        "title": "Cena"
+      },
+      "id": "ID",
+      "datumVazenja": "Datum Vazenja",
+      "iznosCene": "Iznos Cene",
+      "robaIliUsluga": "Roba Ili Usluga"
+    }
+  }
+}

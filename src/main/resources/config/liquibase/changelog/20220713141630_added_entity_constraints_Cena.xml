@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
+    <!--
+        Added the constraints for entity Cena.
+    -->
+    <changeSet id="20220713141630-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="roba_ili_usluga_id"
+                                 baseTableName="cena"
+                                 constraintName="fk_cena__roba_ili_usluga_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="roba_ili_usluga"/>
+    </changeSet>
+</databaseChangeLog>

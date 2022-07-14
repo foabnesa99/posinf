@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
+    <!--
+        Added the constraints for entity RobaIliUsluga.
+    -->
+    <changeSet id="20220713141629-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="jedinica_mere_id"
+                                 baseTableName="roba_ili_usluga"
+                                 constraintName="fk_roba_ili_usluga__jedinica_mere_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="jedinica_mere"/>
+
+        <addForeignKeyConstraint baseColumnNames="poreska_kategorija_id"
+                                 baseTableName="roba_ili_usluga"
+                                 constraintName="fk_roba_ili_usluga__poreska_kategorija_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="poreska_kategorija"/>
+    </changeSet>
+</databaseChangeLog>

@@ -1,0 +1,31 @@
+{
+  "applications": ["myApp"],
+  "changelogDate": "20220713141633",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "jedinica_mere",
+  "fields": [
+    {
+      "fieldName": "naziv",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "skraceniNaziv",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "JedinicaMere",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "robaIliUsluga",
+      "otherEntityRelationshipName": "jedinicaMere",
+      "relationshipName": "robaIliUsluga",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "no"
+}

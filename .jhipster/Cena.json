@@ -1,0 +1,31 @@
+{
+  "applications": ["myApp"],
+  "changelogDate": "20220713141630",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "cena",
+  "fields": [
+    {
+      "fieldName": "datumVazenja",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "iznosCene",
+      "fieldType": "Double"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Cena",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "robaIliUsluga",
+      "otherEntityRelationshipName": "cena",
+      "relationshipName": "robaIliUsluga",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

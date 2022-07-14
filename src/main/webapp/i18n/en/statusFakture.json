@@ -1,0 +1,10 @@
+{
+  "myApp": {
+    "StatusFakture": {
+      "null": "",
+      "FORMIRANJE": "FORMIRANJE",
+      "POSLATA": "POSLATA",
+      "PONISTENA": "PONISTENA"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "applications": ["myApp"],
+  "changelogDate": "20220713141631",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "poreska_kategorija",
+  "fields": [
+    {
+      "fieldName": "naziv",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "PoreskaKategorija",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "poreskaStopa",
+      "otherEntityRelationshipName": "poreskaKategorija",
+      "relationshipName": "poreskaStopa",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "robaIliUsluga",
+      "otherEntityRelationshipName": "poreskaKategorija",
+      "relationshipName": "robaIliUsluga",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "no"
+}

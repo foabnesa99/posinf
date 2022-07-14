@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
+    <!--
+        Added the constraints for entity IzlaznaFaktura.
+    -->
+    <changeSet id="20220713141628-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="kupac_id"
+                                 baseTableName="izlazna_faktura"
+                                 constraintName="fk_izlazna_faktura__kupac_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="kupac"/>
+
+        <addForeignKeyConstraint baseColumnNames="preduzece_id"
+                                 baseTableName="izlazna_faktura"
+                                 constraintName="fk_izlazna_faktura__preduzece_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="preduzece"/>
+    </changeSet>
+</databaseChangeLog>

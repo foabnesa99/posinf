@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
+    <!--
+        Added the constraints for entity PoreskaStopa.
+    -->
+    <changeSet id="20220713141632-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="poreska_kategorija_id"
+                                 baseTableName="poreska_stopa"
+                                 constraintName="fk_poreska_stopa__poreska_kategorija_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="poreska_kategorija"/>
+    </changeSet>
+</databaseChangeLog>

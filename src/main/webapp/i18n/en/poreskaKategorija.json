@@ -1,0 +1,26 @@
+{
+  "myApp": {
+    "poreskaKategorija": {
+      "home": {
+        "title": "Poreska Kategorijas",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Poreska Kategorija",
+        "createOrEditLabel": "Create or edit a Poreska Kategorija",
+        "notFound": "No Poreska Kategorijas found"
+      },
+      "created": "A new Poreska Kategorija is created with identifier {{ param }}",
+      "updated": "A Poreska Kategorija is updated with identifier {{ param }}",
+      "deleted": "A Poreska Kategorija is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Poreska Kategorija {{ id }}?"
+      },
+      "detail": {
+        "title": "Poreska Kategorija"
+      },
+      "id": "ID",
+      "naziv": "Naziv",
+      "poreskaStopa": "Poreska Stopa",
+      "robaIliUsluga": "Roba Ili Usluga"
+    }
+  }
+}

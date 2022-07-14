@@ -1,0 +1,31 @@
+{
+  "applications": ["myApp"],
+  "changelogDate": "20220713141634",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "poslovna_godina",
+  "fields": [
+    {
+      "fieldName": "godina",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "zakljucena",
+      "fieldType": "Boolean"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "PoslovnaGodina",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "preduzece",
+      "otherEntityRelationshipName": "poslovnaGodina",
+      "relationshipName": "preduzece",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

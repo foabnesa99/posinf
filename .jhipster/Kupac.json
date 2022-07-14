@@ -1,0 +1,43 @@
+{
+  "applications": ["myApp"],
+  "changelogDate": "20220713141627",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "kupac",
+  "fields": [
+    {
+      "fieldName": "pib",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "mib",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "naziv",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "adresa",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "telefon",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Kupac",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "izlaznaFaktura",
+      "otherEntityRelationshipName": "kupac",
+      "relationshipName": "izlaznaFaktura",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "no"
+}

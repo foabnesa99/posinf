@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <!--
+        Added the entity StavkaFakture.
+    -->
+    <changeSet id="20220713141635-1" author="jhipster">
+        <createTable tableName="stavka_fakture">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="kolicina" type="double">
+                <constraints nullable="true" />
+            </column>
+            <column name="jedinicna_cena" type="double">
+                <constraints nullable="true" />
+            </column>
+            <column name="rabat" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="procenat_pdv" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="iznos_pdv" type="double">
+                <constraints nullable="true" />
+            </column>
+            <column name="ukupna_cena" type="double">
+                <constraints nullable="true" />
+            </column>
+            <column name="izlazna_faktura_id" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <column name="roba_ili_usluga_id" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <!-- jhipster-needle-liquibase-add-column - JHipster will add columns here -->
+        </createTable>
+    </changeSet>
+
+    <!-- jhipster-needle-liquibase-add-changeset - JHipster will add changesets here -->
+
+    <!--
+        Load sample data generated with Faker.js
+        - This data can be easily edited using a CSV editor (or even MS Excel) and
+          is located in the 'src/main/resources/config/liquibase/fake-data' directory
+        - By default this data is applied when running with the JHipster 'dev' profile.
+          This can be customized by adding or removing 'faker' in the 'spring.liquibase.contexts'
+          Spring Boot configuration key.
+    -->
+    <changeSet id="20220713141635-1-data" author="jhipster" context="faker">
+        <loadData
+                  file="config/liquibase/fake-data/stavka_fakture.csv"
+                  separator=";"
+                  tableName="stavka_fakture"
+                  usePreparedStatements="true">
+            <column name="id" type="numeric"/>
+            <column name="kolicina" type="numeric"/>
+            <column name="jedinicna_cena" type="numeric"/>
+            <column name="rabat" type="numeric"/>
+            <column name="procenat_pdv" type="numeric"/>
+            <column name="iznos_pdv" type="numeric"/>
+            <column name="ukupna_cena" type="numeric"/>
+            <!-- jhipster-needle-liquibase-add-loadcolumn - JHipster (and/or extensions) can add load columns here -->
+        </loadData>
+    </changeSet>
+</databaseChangeLog>

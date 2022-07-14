@@ -1,0 +1,31 @@
+{
+  "applications": ["myApp"],
+  "changelogDate": "20220713141632",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "poreska_stopa",
+  "fields": [
+    {
+      "fieldName": "procenatPdv",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "datumVazenja",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "PoreskaStopa",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "poreskaKategorija",
+      "otherEntityRelationshipName": "poreskaStopa",
+      "relationshipName": "poreskaKategorija",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

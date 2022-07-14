@@ -1,0 +1,26 @@
+{
+  "myApp": {
+    "poreskaStopa": {
+      "home": {
+        "title": "Poreska Stopas",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Poreska Stopa",
+        "createOrEditLabel": "Create or edit a Poreska Stopa",
+        "notFound": "No Poreska Stopas found"
+      },
+      "created": "A new Poreska Stopa is created with identifier {{ param }}",
+      "updated": "A Poreska Stopa is updated with identifier {{ param }}",
+      "deleted": "A Poreska Stopa is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Poreska Stopa {{ id }}?"
+      },
+      "detail": {
+        "title": "Poreska Stopa"
+      },
+      "id": "ID",
+      "procenatPdv": "Procenat Pdv",
+      "datumVazenja": "Datum Vazenja",
+      "poreskaKategorija": "Poreska Kategorija"
+    }
+  }
+}
